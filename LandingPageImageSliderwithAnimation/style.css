@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Arail', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  overflow: hidden;
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+#slideImg {
+  width: 100%;
+  height: 100vh;
+  animation: zoom 3s linear infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  15% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100vh; 
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4));
+  position: absolute;
+  top: 0;
+}
+
+#logo {
+  width: 250px;
+}
+
+.navbar {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  margin: 35px auto;
+}
+
+.logo {
+  flex-basis: 15%;
+}
+
+.logo img {
+  width: 250px;
+  cursor: pointer;
+}
+
+.menu-icons {
+  flex: 1;
+  align-items: center;
+  text-align: right;
+}
+
+.menu-icons img {
+  width: 20px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.content {
+  width: 60%;
+  margin: 160px auto 0;
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 60px;
+  text-shadow: 0 0px 8px purple;
+}
+
+.content h3 {
+  width: 80%;
+  margin: 20px auto 100px;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #fe7250;
+  background: #fe7250;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+button:hover{
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-2 {
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.btn-2:hover {
+  background: #fe7250;
+  border: 2px solid #fe7250;
+}
