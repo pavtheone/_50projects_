@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website with Cursor Animation</title>
+  </head>
+  <body>
+    
+      <div class="container">
+        <div class="navbar">
+          <img src="/img/logo.png" class="logo" alt="">
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">OFFICE</a></li>
+              <li><a href="#">HOTELS</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </nav>
+          <img src="/img/menu.png" class="menu-icon" alt="">
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="text-box">
+              <h5>Our Products</h5>
+              <h1><b>Simplicity</b> <br> is the <b>ultimate</b> sophistication</h1>
+            </div>
+
+            <img src="/img/circle.png" class="small-icon1" alt="">
+            <img src="/img/circle.png" class="small-icon2" alt="">
+            <img src="/img/square.png" class="small-icon3" alt="">
+
+          </div>
+          <div class="col">
+            <div class="gallery-box">
+              <img src="/img/pic2.jpg" id="gallery" alt="">
+
+              <ul>
+                <li class="btn">01</li>
+                <li class="btn active">02</li>
+                <li class="btn">03</li>
+                <li class="btn">04</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <img src="/img/circle.png" class="small-icon4" alt="">
+        <img src="/img/square.png" alt="" class="small-icon5">
+      </div>
+
+     
+      <!-------CURSOR STYLE-------->
+
+      <div class="" id="cursor"></div>
+      <script>
+        var cursor = document.getElementById("cursor");
+
+        document.onmousemove = function(e){
+          cursor.style.left = (e.pageX - 25) + "px";
+          cursor.style.top = (e.pageY - 25) + "px";
+          cursor.style.display = "block";
+        }
+
+      </script>
+    <script src="script.js"></script>
+  </body>
+</html>
